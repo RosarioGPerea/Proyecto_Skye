@@ -1,0 +1,155 @@
+<!DOCTYPE html5>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <meta name="description"
+        content="Esta es una página web de una compositora aún poco conocida, pero por descubrir" />
+    <meta author="Creada por la freelance Rocío Free" />
+    <meta keywords="música, compositora, piano, sintetizador, artcore" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Skye Music</title>
+</head>
+
+<body>
+    <div class="contenedor">
+    <header>
+        <div class="logo">
+            <img class="logotipo" src="assets/images/Logo SKYE V2.png" alt="Logotipo Skye Music" />
+            <h1>Skye Music</h1>
+
+            <div class="descripcion">
+                <h2>Compositora</h2>
+                <h3>Bandas sonoras de videojuegos, artcore y mucho más</h3>
+            </div>
+        </div>
+    </header>
+
+
+    </div>
+
+    <div>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./sobremi.html">Sobre Mi</a>
+            <a href="./mis_temas.html">Mis temas</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+
+    </div>
+    <section>
+    
+                <h2 class="h2_MT">Mis Temas</h2>
+            
+    <div id="main-synth-wrapper">
+
+        <div id="contenedor_sintetizador">
+            
+            <div id="padContainer">
+                <div class="pad" data-track-name="Crystal" onclick="playTrack('Crystal', this)">
+                    <img src="./covers/1.png" alt="Crystal Monster" />
+                    <span>Crystal Monster</span>
+                </div>
+
+                <div class="pad" data-track-name="Ghostly" onclick="playTrack('Ghostly', this)">
+                    <img src="covers/PORTADA GHOSTLY ASHES.png" alt="Ghostly Ashes" />
+                    <span>Ghostly Ashes</span>
+                </div>
+
+                <div class="pad" data-track-name="Gravity" onclick="playTrack('Gravity', this)">
+                    <img src="covers/PORTADA GRAVITY ZERO.png" alt="Gravity Zero" />
+                    <span>Gravity Zero</span>
+                </div>
+
+                <div class="pad" data-track-name="Infinito" onclick="playTrack('Infinito', this)">
+                    <img src="covers/PORTADA INFINITO ETERNO.png" alt="Infinito Eterno" />
+                    <span>Infinito Eterno</span>
+                </div>
+
+                <div class="pad" data-track-name="Loneliness" onclick="playTrack('Loneliness', this)">
+                    <img src="covers/PORTADA LONELINESS.png" alt="Loneliness" />
+                    <span>Loneliness</span>
+                </div>
+
+
+
+            </div>
+            <div id="keyboard">
+
+                <div class="white-keys-container">
+
+                    <div class="key white" data-note="C" onclick="playNote(this, 'C')"></div>
+
+                    <div class="key white" data-note="D" onclick="playNote(this, 'D')"></div>
+
+                    <div class="key white" data-note="E" onclick="playNote(this, 'E')">
+                    </div>
+
+                    <div class="key white" data-note="F" onclick="playNote(this, 'F')">
+                    </div>
+
+                    <div class="key white" data-note="G" onclick="playNote(this, 'G')">
+                    </div>
+
+                    <div class="key white" data-note="A" onclick="playNote(this, 'A')">
+                    </div>
+
+                    <div class="key white" data-note="B" onclick="playNote(this, 'B')">
+                    </div>
+                    <div class="key white" data-note="G" onclick="playNote(this, 'G')">
+                    </div>
+
+                    <div class="key white" data-note="A" onclick="playNote(this, 'A')">
+                    </div>
+
+                    <div class="key white" data-note="B" onclick="playNote(this, 'B')">
+                    </div>
+
+                </div>
+                <div class="black-keys-container">
+
+                    <div class="key black" data-note="Cb1" onclick="playNote(this,'Cb1')">
+                    </div>
+
+                    <div class="key black" data-note="Db1" onclick="playNote(this,'Db1')">
+                    </div>
+
+                    <div class="key black" data-note="Fb1" onclick="playNote(this,'Fb1')">
+                    </div>
+
+                    <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
+                    </div>
+
+                    <div class="key black" data-note="Ab1" onclick="playNote(this,'Ab1')">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    </section>
+    <section>
+        <h2 class="h2_MT">Descripción</h2>
+        <p>
+            psum dolor sit amet consectetur adipisicing elit. Atque dolorem at
+            dolores fugit aperiam aut accusamus nobis quaerat. Sequi, rerum
+            veritatis delectus modi optio vero ea? Et hic similique deserunt!
+            Minus, eligendi. Eligendi quod aspernatur voluptate nihil doloremque
+            perspiciatis beatae odio quis. Qui debitis quibusdam rerum
+            exercitationem nulla inventore labo
+          </p>
+    </section>
+</body>
+
+</html>
