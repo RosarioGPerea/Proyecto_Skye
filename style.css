@@ -32,27 +32,43 @@ body {
 }
 
 .logo {
-    position: fixed;
-    justify-content: flex-start;
     display: flex;
-    align-items: flex-start;
-    height: 100%;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+    gap: 20px;
+    
 }
 
 .contenedor {
-    background: url(./assets/images/Imagen\ de\ WhatsApp\ 2025-04-26\ a\ las\ 14.28.19_2ed6dea1.jpg);
+    position: relative;
+    
+    display:flex;
+    background: url(./assets/images/Portada\ piano.png);
     background-size: cover;
-    background-position: center;
-    margin: 0;
+    /* margin: 0;
+    padding: 0%; */
     height: 200px;
+    
+    /* display: flex;
+    position: relative; */
 }
 
-.descripcion {
+/* .descripcion {
     color: #32e0e1;
     display: flex;
     align-items: end;
-}
+} */
 
 nav {
     border-style: outset;
@@ -123,7 +139,8 @@ h1 {
 
 #main-synth-wrapper {
     background: #1a1a1a;
-    background: linear-gradient(to center var(--Gris), black, var(--Gris)));
+    background: #393d3d;
+    background: linear-gradient(90deg,rgba(57, 61, 61, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(74, 74, 72, 1) 100%);
     justify-self: center;
     display: flex;
     justify-content: center;
@@ -172,21 +189,22 @@ h1 {
 } */
 
 #padContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,
-            minmax(calc(155 / var(--design-width) * 100vw), 2fr));
-    gap: calc(20 / var(--design-width) * 100vw);
-    width: calc(900 / var(--design-width) * 100vw);
-    max-width: 100%;
-    margin-bottom: calc(40 / var(--design-width) * 100vw);
+    display: flex;
+    height: 10rem 10rem;
+    gap: 3vw;
+    /* grid-template-columns: repeat(auto-fit, minmax(calc(155 / var(--design-width) * 100vw), 2fr)); */
+    /* gap: calc(20 / var(--design-width) * 100vw);
+    width: calc(900 / var(--design-width) * 100vw); */
+    
+    margin-bottom: 40px;
     justify-content: center;
 }
 
 .pad {
     cursor: pointer;
-    aspect-ratio: 1 / 1;
-    border: calc(2 / var(--design-width) * 100vw) solid #f20779;
-    border-radius: calc(10 / var(--design-width) * 100vw);
+    border: solid;
+    border-color:#f20779;
+    border-radius: 10px;
     background: black;
     transition: transform 0.2s, background-color 0.3s;
     position: relative;
@@ -195,7 +213,7 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: calc(5 / var(--design-width) * 100vw);
+    padding:5px;
     box-sizing: border-box;
 }
 
@@ -208,16 +226,15 @@ h1 {
 }
 
 .pad img {
-    width: 90%;
-    height: 90%;
+    width: 10vw;
+    height: 10vw;
     object-fit: cover;
     opacity: 0.8;
     border-radius: 5px;
-    margin-bottom: 4%;
 }
 
 .pad span {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: var(--Celeste);
     font-weight: bolder;
     text-shadow: 3px 3px 5px black;
@@ -232,17 +249,17 @@ h1 {
 
 #keyboard {
     position: relative;
-    width: 1100px;
-    height: 150px;
+    width: 65vw;
+    height: 25vw;
     /* width: calc(1000 / var(--design-width) * 100vw); */
     min-width: 550px;
     /* height: calc(300 / var(--design-width) * 100vw); */
-    min-height: 100px;
+    min-height: 50px;
     /* margin: calc(50 / var(--design-width) * 100vw) auto; */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    box-sizing: border-box;
+    /* align-items: flex-start; */
+    /* box-sizing: border-box; */
 }
 
 .white-keys-container {
@@ -252,17 +269,20 @@ h1 {
 
 .black-keys-container {
     position: absolute;
-    top: 0;
+    /* top: 0;
     left: 0;
-    right: 0;
-    height: 70%;
+    right: 0; */
+    height: 65%;
     display: flex;
-    margin-left: calc((100 / var(--design-width) * 100vw) * 0.7);
+    /* margin-left: calc((100 / var(--design-width) * 100vw) * 0.7); */
 }
 
 .key {
     transition: 0.01s;
     box-sizing: border-box;
+    border: none;
+    border-radius: 3px 3px 3px 3px ;
+    border-top: #393d3d;
 }
 
 .white.key {
