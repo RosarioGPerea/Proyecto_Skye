@@ -14,26 +14,32 @@
 * {
     color: var(--Blanco);
     font-family: "Krub", sans-serif;
+    text-align: justify;
 }
 
 .logotipo {
+    display: flex;
+    position: fixed;
     min-width: 40px;
     max-width: 50px;
     border-radius: 45px;
     border-color: var(--Negro);
     border-style: solid;
+    z-index: 1;
 
     
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     background-color: var(--Negro);
 }
 
 .logo {
     display: flex;
-    margin: 0;
+    position: relative;
+    margin: 0 10px;
     padding: 0;
     
 
@@ -46,12 +52,14 @@ ul {
     display: flex;
     margin: 0;
     padding: 10px;
-    justify-content: space-between;
+    
+    flex-direction: row;
     
 }
 
 li {
     display: flex;
+    flex-direction: row;
     
 }
 
@@ -65,6 +73,7 @@ li {
     /* margin: 0;
     padding: 0%; */
     height: 25vw;
+    
     
     /* display: flex;
     position: relative; */
@@ -84,13 +93,13 @@ li {
     background-image: linear-gradient(90deg, rgba(212, 19, 141, 1) 0%, rgba(166, 53, 91, 1) 47%, rgba(201, 186, 48, 1) 88%);
     min-width: 100vw;
     height: 40px;
-    display: flex;
-    justify-content:space-between;
-    flex-direction: row;
-
-    
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
     
 }
+
 /* nav {
     border-style: outset;
     border-radius: 30px 2px 30px 2px;
@@ -107,21 +116,39 @@ li {
 .nav-bg a {
     font-size: .8rem;
     font-weight: bold;
-    
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    padding: .5rem;
+    margin-left: 20px;
+    margin-right: 20px;
     transition: transform 0.2s, background-color 0.3s;
 }
 
-a:hover {
-    transform: scale(1.10);
-    color: #f20779;
+.nav-bg a:hover {
+    transform: scale(1.20);
+    transition: transform 0.2s, background-color 0.3s;
+    background: #d4138d;
+    background-image: linear-gradient(90deg, rgba(201, 186, 48, 1) 0%,  rgba(166, 53, 91, 1) 47%,rgba(212, 19, 141, 1) 88%);
+    'background-image:linear-gradient#8A018C;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: var(--Rosa);   
+   
 }
 
 
 h1 {
-    font-size: 2rem;
-    margin: 0;
-    padding: 0;
+    font-size: 1.6rem;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 0;
+    
 }
 
 h2 {
@@ -135,6 +162,8 @@ h3 {
 }
 p {
     font-size: 0.8rem;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* .conoceme {
@@ -171,8 +200,8 @@ section {
     align-items: center;
     display: flex;
 }
-
-.conoceme_titulo {
+*/
+section .conoceme .conoceme_titulo {
     text-align: center;
     position: relative;
     align-self:flex-start;
@@ -180,16 +209,19 @@ section {
     padding-bottom: 1rem;
 }
 
-.conoceme_texto {
-    align-self:flex-start;
+section .conoceme .conoceme_texto {
+    position: relative;
+    justify-content: center;
+    align-items:center;
+    text-align: justify;
 }
-.conoceme_texto p {
+/* section .conoceme .conoceme_texto p {
     text-align: justify;
     position: relative;
 }
-.conoceme_foto {
-    
-} */
+section .conoceme .conoceme_foto {
+   align-self: end; 
+}  */
 
 
 
@@ -202,7 +234,7 @@ section {
 
 }
 
-.conoceme_boton {
+section .conoceme .conoceme_boton {
     color: var(--Noche);
     font-family: Krub, "Trebuchet MS";
     font-size: 1rem;
@@ -214,24 +246,19 @@ section {
     border-color: var(--Rosa);
     margin-left: 40%;
 }
-.conoceme_boton:hover {
+section .conoceme .conoceme_boton:hover {
     transform: scale(1.10);
     color: #f20779;
     background-color: var(--Noche);
 }
 
 /* SECCIÓN DE SEPARACIÓN */
-section > img > .separador {
-    display: flex;
-
+.separador {
+    display: grid;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    max-width: 50%;
-    max-height: 10vw;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    min-width: 100vw;
+    max-height: 40vw;
 }
 
 /* PÁGINA DE MIS TEMAS */
