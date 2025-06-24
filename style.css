@@ -64,7 +64,7 @@ li {
     background-repeat: no-repeat;
     /* margin: 0;
     padding: 0%; */
-    height: 200px;
+    height: 25vw;
     
     /* display: flex;
     position: relative; */
@@ -76,7 +76,22 @@ li {
     align-items: end;
 } */
 
-nav {
+.nav-bg {
+    /* background: var(--Fucsia);
+    background: linear-gradient(to left, var(--Pink), var(--Amarillo));
+    background-image: linear-gradient(to left, var(--Rosa), var(--Amarillo)); */
+    background: #d4138d;
+    background-image: linear-gradient(90deg, rgba(212, 19, 141, 1) 0%, rgba(166, 53, 91, 1) 47%, rgba(201, 186, 48, 1) 88%);
+    min-width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+
+    
+    
+}
+/* nav {
     border-style: outset;
     border-radius: 30px 2px 30px 2px;
     border-color: var(--Fucsia);
@@ -87,21 +102,21 @@ nav {
     text-align: center;
     padding-right: 35px;
 
-}
+} */
 
-a {
-    font-size: 15px;
+.nav-bg a {
+    font-size: .8rem;
     font-weight: bold;
+    
+    
     transition: transform 0.2s, background-color 0.3s;
 }
 
 a:hover {
-    transform: scale(1.05);
-}
-
-a:active {
+    transform: scale(1.10);
     color: #f20779;
 }
+
 
 h1 {
     font-size: 2rem;
@@ -111,46 +126,112 @@ h1 {
 
 h2 {
     font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
 }
 
 h3 {
     font-size: 1rem;
 }
+p {
+    font-size: 0.8rem;
+}
 
-#sobre_mi {
-    display: flex;
-    justify-content: center;
+/* .conoceme {
+    display: grid;
+    justify-items:center;
     align-items: center;
     background-color: var(--Negro);
     overflow: hidden;
     border: solid;
     border-color: var(--Pink);
     border-radius: 45px;
-    border-width: 1vw;
+    border-width: 0.5rem;
     margin: 1rem;
     padding: 2rem;
+} */
+
+section {
+    display:inline-table;
+    position:relative;
+    max-width: 100vw;
+    max-height: 20vw;
+    overflow-x: hidden;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#sobre_mi p {
-    padding-right: 2rem;
+/* #conoceme {
+    background-color: #d4138d6c;
+    position: relative;
 }
+.conoceme {
+    position: absolute;
+    align-items: center;
+    display: flex;
+}
+
+.conoceme_titulo {
+    text-align: center;
+    position: relative;
+    align-self:flex-start;
+    justify-self: center;
+    padding-bottom: 1rem;
+}
+
+.conoceme_texto {
+    align-self:flex-start;
+}
+.conoceme_texto p {
+    text-align: justify;
+    position: relative;
+}
+.conoceme_foto {
+    
+} */
+
+
 
 .foto {
     width: 40vw;
     border: solid;
-    border-radius: 45px;
+    border-radius: 20px;
+    border-color: #ec008c;
+    box-shadow: 2px 2px 4px #ad0f73;
+
 }
 
-.botonConoceme {
+.conoceme_boton {
     color: var(--Noche);
     font-family: Krub, "Trebuchet MS";
-    font-size: 2rem;
+    font-size: 1rem;
+    font-weight: 800; 
     background-color: var(--Fucsia);
     border: solid;
     border-radius: 50px;
     border-width: 1px;
     border-color: var(--Rosa);
     margin-left: 40%;
+}
+.conoceme_boton:hover {
+    transform: scale(1.10);
+    color: #f20779;
+    background-color: var(--Noche);
+}
+
+/* SECCIÓN DE SEPARACIÓN */
+section > img > .separador {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 50%;
+    max-height: 10vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* PÁGINA DE MIS TEMAS */
@@ -236,9 +317,21 @@ div li .rueda_iz {
     border: solid;
     border-width: 1.5px;
     border-radius: 45px;
-    background: #fb3fe2;
-    background: radial-gradient(circle, rgba(251, 63, 226, 1) 19%, rgba(252, 70, 107, 1) 35%);
+    /* background: #bf009f;
+background: linear-gradient(90deg, rgba(191, 0, 159, 1) 50%, rgba(245, 176, 243, 1) 53%, rgba(250, 0, 250, 1) 100%); */
+
+
+    /* background: #fb3fe2;
+    background: radial-gradient(circle, rgba(251, 63, 226, 1) 19%, rgba(252, 70, 107, 1) 35%); */
+    transition: transform 2s;
+
+    background: #f373f5;
+background: linear-gradient(0deg, rgba(243, 115, 245, 1) 0%, rgba(176, 7, 176, 1) 34%);
     
+}
+
+div li .rueda_iz:hover {
+    transform: rotate(360deg);
 }
 
 
