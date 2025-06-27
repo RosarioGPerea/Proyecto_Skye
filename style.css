@@ -15,6 +15,8 @@
     color: var(--Blanco);
     font-family: "Krub", sans-serif;
     text-align: justify;
+    box-sizing: border-box;
+    font-size: 10px;
 }
 
 .logotipo {
@@ -90,12 +92,12 @@ li {
     background: linear-gradient(to left, var(--Pink), var(--Amarillo));
     background-image: linear-gradient(to left, var(--Rosa), var(--Amarillo)); */
     background: #d4138d;
-    background-image: linear-gradient(90deg, rgba(212, 19, 141, 1) 0%, rgba(166, 53, 91, 1) 47%, rgba(201, 186, 48, 1) 88%);
+    background-image: linear-gradient(90deg, #d4138d 0%, #a6355b 47%, #c9ba30 88%);
     min-width: 100vw;
     height: 40px;
     display:flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     justify-items: center;
     
 }
@@ -114,34 +116,34 @@ li {
 } */
 
 .nav-bg a {
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;    
-    padding: .5rem;
-    margin-left: 20px;
-    margin-right: 20px;
-    transition: transform 0.2s, background-color 0.3s;
+    justify-content: space-around;
+    align-items: center;
+    padding:8%;
+   /*  margin-left: 35%;
+    margin-right: 35%; */
+   /*  transition: transform 0.2s, background-color 0.3s; */
 }
 
 .nav-bg a:hover {
     transform: scale(1.20);
     transition: transform 0.2s, background-color 0.3s;
     background: #d4138d;
-    background-image: linear-gradient(90deg, rgba(201, 186, 48, 1) 0%,  rgba(166, 53, 91, 1) 47%,rgba(212, 19, 141, 1) 88%);
-    'background-image:linear-gradient#8A018C;
+    background-image: linear-gradient(90deg, #c9ba30 0%,  #a6355b 47%,#d4138d 88%);
+    background-image:linear-gradient#8A018C;
     border: solid;
     border-radius: 5px;
     border-width: 1px;
-    border-color: var(--Rosa);   
-   
+    border-color: var(--Rosa);
+
 }
 
 
 h1 {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     display: flex;
     position: fixed;
     z-index: 1;
@@ -152,7 +154,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     justify-content: center;
 }
@@ -161,7 +163,7 @@ h3 {
     font-size: 1rem;
 }
 p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -180,16 +182,17 @@ p {
     padding: 2rem;
 } */
 
-section {
+/* section {
     display:inline-table;
     position:relative;
     max-width: 100vw;
     max-height: 20vw;
     overflow-x: hidden;
+    justify-content: center;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-}
+} */
 
 /* #conoceme {
     background-color: #d4138d6c;
@@ -270,18 +273,18 @@ section .conoceme .conoceme_boton:hover {
 
 /* ESTILOS SINTETIZADOR */
 
+
+
 #main-synth-wrapper {
     background: #1a1a1a;
     background: #393d3d;
     background: linear-gradient(90deg,rgba(57, 61, 61, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(74, 74, 72, 1) 100%);
     justify-self: center;
+    flex-direction: column;
     display: flex;
-    justify-content: center;
     align-items: center;
-    max-width: max-content;
-    min-height: content;
-    box-sizing: border-box;
-    overflow-x: hidden;
+    max-width: 80vw;
+    min-height:max-content;
     border: solid;
     border-color: var(--Gris);
     border-radius: 5px;
@@ -298,10 +301,8 @@ section .conoceme .conoceme_boton:hover {
     flex-direction: column;
     columns: 2;
     align-items: center;
-    width: 90vw;
-    max-width: calc(var(--design-width) * 1px);
-    padding: calc(10 / var(--design-width) * 100vw);
-    box-sizing: border-box;
+    
+    /* box-sizing: border-box; */
 }
 
 /* #title {
@@ -323,24 +324,27 @@ section .conoceme .conoceme_boton:hover {
 
 #padContainer {
     display: flex;
-    height: 10rem 10rem;
-    gap: 3vw;
-    /* grid-template-columns: repeat(auto-fit, minmax(calc(155 / var(--design-width) * 100vw), 2fr)); */
-    /* gap: calc(20 / var(--design-width) * 100vw);
-    width: calc(900 / var(--design-width) * 100vw); */
-    
-    margin-bottom: 40px;
+
+    gap: 0.5%;    
+    margin-bottom:5%;
     justify-content: center;
+    align-items: center;
 }
 
-div li .rueda_iz {
-    width: 5vw;
-    height: 5vw;
-    display: flex;
-    display:table-cell;
+#ruedas {
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.rueda_iz {
+    width: 4vw;
+    height: 4vw;
     border-color: #8A018C;
-    margin-left: 30px;
-    margin-bottom: 10PX;
+    /* margin-left: 30px;
+    margin-bottom: 10PX; */
     border: solid;
     border-width: 1.5px;
     border-radius: 45px;
@@ -357,16 +361,16 @@ background: linear-gradient(0deg, rgba(243, 115, 245, 1) 0%, rgba(176, 7, 176, 1
     
 }
 
-div li .rueda_iz:hover {
+.rueda_iz:hover {
     transform: rotate(360deg);
 }
 
 
 .pad {
-    width: 13vw;
-    height: 13vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: 16%;
+    height: 18%;
+    margin-left: 1%;
+    margin-right: 1%;
     cursor: pointer;
     border: solid;
     border-color:#f20779;
@@ -374,13 +378,15 @@ div li .rueda_iz:hover {
     background: black;
     transition: transform 0.2s, background-color 0.3s;
     position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding:5px;
-    box-sizing: border-box;
+    padding:1%;
+    
+    
 }
 
 .pad:hover {
@@ -394,19 +400,20 @@ div li .rueda_iz:hover {
 .pad img {
     width: 10vw;
     height: 10vw;
-    object-fit: cover;
+    /* object-fit: cover; */
     opacity: 0.8;
     border-radius: 5px;
 }
 
 .pad span {
-    font-size: 1.2vw;
+    font-size:1rem;
+    padding-top:5px ;
     color: var(--Celeste);
     font-weight: bolder;
     text-shadow: 3px 3px 5px black;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow:ellipsis;
     max-width: 100%;
     background: none;
 
@@ -435,6 +442,8 @@ div li .rueda_iz:hover {
 
 .black-keys-container {
     position: absolute;
+    display: flex;
+    gap: 3.5vw;
     /* top: 0;
     left: 0;
     right: 0; */
@@ -478,10 +487,7 @@ div li .rueda_iz:hover {
     box-shadow: 2px 2px 5px #393d3d; 
 }
 
-.black-keys-container {
-    display: flex;
-    gap: 3.5vw;
-}
+
 
 .none {
     display: flex;

@@ -68,35 +68,22 @@
         </nav>
 
     </div>
-    <section>
+    <section id="Sintetizador">
 
         <h2 class="h2_MT">Mis Temas</h2>
 
         <div id="main-synth-wrapper">
-            
-            <div id="contenedor_sintetizador">
-                
-                <div>
-                        <ul>
-                            <li>
-                                <div class="rueda_iz">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="rueda_iz">
-                                </div>
-                            </li>
-                             <li>
-                                <div class="rueda_iz">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="rueda_iz">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
 
+            
+                <div id="ruedas">
+                    <div class="rueda_iz"></div>
+                    <div class="rueda_iz"></div>
+                    <div class="rueda_iz"></div>
+                    <div class="rueda_iz"></div>
+                    <div class="rueda_iz"></div>
+                </div>
+
+           <!--  <div id="contenedor_sintetizador"> -->
                 <div id="padContainer">
                     <div class="pad" data-track-name="Crystal" onclick="playTrack('Crystal', this)">
                         <img src="./covers/1.png" alt="Crystal Monster" />
@@ -123,76 +110,76 @@
                         <span>Loneliness</span>
                     </div>
 
-                    
 
 
+                <!-- </div> -->
+
+            </div>
+
+            <div id="keyboard">
+
+                <div class="white-keys-container">
+
+                    <div class="key white" data-note="C" onclick="playNote(this, 'C')"></div>
+
+                    <div class="key white" data-note="D" onclick="playNote(this, 'D')"></div>
+
+                    <div class="key white" data-note="E" onclick="playNote(this, 'E')">
+                    </div>
+
+                    <div class="key white" data-note="F" onclick="playNote(this, 'F')">
+                    </div>
+
+                    <div class="key white" data-note="G" onclick="playNote(this, 'G')">
+                    </div>
+
+                    <div class="key white" data-note="A" onclick="playNote(this, 'A')">
+                    </div>
+
+                    <div class="key white" data-note="B" onclick="playNote(this, 'B')">
+                    </div>
+                    <div class="key white" data-note="G" onclick="playNote(this, 'G')">
+                    </div>
+
+                    <div class="key white" data-note="A" onclick="playNote(this, 'A')">
+                    </div>
+
+                    <div class="key white" data-note="B" onclick="playNote(this, 'B')">
+                    </div>
 
                 </div>
-                
-                <div id="keyboard">
+                <div class="black-keys-container">
 
-                    <div class="white-keys-container">
-
-                        <div class="key white" data-note="C" onclick="playNote(this, 'C')"></div>
-
-                        <div class="key white" data-note="D" onclick="playNote(this, 'D')"></div>
-
-                        <div class="key white" data-note="E" onclick="playNote(this, 'E')">
-                        </div>
-
-                        <div class="key white" data-note="F" onclick="playNote(this, 'F')">
-                        </div>
-
-                        <div class="key white" data-note="G" onclick="playNote(this, 'G')">
-                        </div>
-
-                        <div class="key white" data-note="A" onclick="playNote(this, 'A')">
-                        </div>
-
-                        <div class="key white" data-note="B" onclick="playNote(this, 'B')">
-                        </div>
-                        <div class="key white" data-note="G" onclick="playNote(this, 'G')">
-                        </div>
-
-                        <div class="key white" data-note="A" onclick="playNote(this, 'A')">
-                        </div>
-
-                        <div class="key white" data-note="B" onclick="playNote(this, 'B')">
-                        </div>
-
+                    <div class="key black" data-note="Cb1" onclick="playNote(this,'Cb1')">
                     </div>
-                    <div class="black-keys-container">
 
-                        <div class="key black" data-note="Cb1" onclick="playNote(this,'Cb1')">
-                        </div>
+                    <div class="key black" data-note="Db1" onclick="playNote(this,'Db1')">
+                    </div>
 
-                        <div class="key black" data-note="Db1" onclick="playNote(this,'Db1')">
-                        </div>
+                    <div class="none" data-note="Fb1" onclick="playNote(this,'Fb1')">
+                    </div>
 
-                        <div class="none" data-note="Fb1" onclick="playNote(this,'Fb1')">
-                        </div>
+                    <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
+                    </div>
 
-                        <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
-                        </div>
+                    <div class="key black" data-note="Ab1" onclick="playNote(this,'Ab1')">
+                    </div>
+                    <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
+                    </div>
 
-                        <div class="key black" data-note="Ab1" onclick="playNote(this,'Ab1')">
-                        </div>
-                        <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
-                        </div>
+                    <div class="none" data-note="Ab1" onclick="playNote(this,'Ab1')">
+                    </div>
+                    <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
+                    </div>
 
-                        <div class="none" data-note="Ab1" onclick="playNote(this,'Ab1')">
-                        </div>
-                        <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
-                        </div>
-
-                        <div class="key black" data-note="Ab1" onclick="playNote(this,'Ab1')">
-                        </div>
-
+                    <div class="key black" data-note="Ab1" onclick="playNote(this,'Ab1')">
                     </div>
 
                 </div>
 
             </div>
+
+
 
         </div>
         <script src="script.js"></script>
