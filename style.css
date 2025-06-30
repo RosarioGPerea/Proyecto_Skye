@@ -14,144 +14,10 @@
 * {
     color: var(--Blanco);
     font-family: "Krub", sans-serif;
-    text-align: justify;
     box-sizing: border-box;
     font-size: 10px;
 }
 
-.logotipo {
-    display: flex;
-    position: fixed;
-    min-width: 40px;
-    max-width: 50px;
-    border-radius: 45px;
-    border-color: var(--Negro);
-    border-style: solid;
-    z-index: 1;
-
-    
-}
-
-body {
-    overflow-x: hidden;
-    margin: 0;
-    background-color: var(--Negro);
-}
-
-.logo {
-    display: flex;
-    position: relative;
-    margin: 0 10px;
-    padding: 0;
-    
-
-}
-a {
-    text-decoration: none;
-}
-ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 10px;
-    
-    flex-direction: row;
-    
-}
-
-li {
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.contenedor {
-    position: relative;
-    
-    display:flex;
-    background: url(./assets/images/Portada\ piano.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    /* margin: 0;
-    padding: 0%; */
-    height: 25vw;
-    
-    
-    /* display: flex;
-    position: relative; */
-}
-
-/* .descripcion {
-    color: #32e0e1;
-    display: flex;
-    align-items: end;
-} */
-
-.nav-bg {
-    /* background: var(--Fucsia);
-    background: linear-gradient(to left, var(--Pink), var(--Amarillo));
-    background-image: linear-gradient(to left, var(--Rosa), var(--Amarillo)); */
-    background: #d4138d;
-    background-image: linear-gradient(90deg, #d4138d 0%, #a6355b 47%, #c9ba30 88%);
-    min-width: 100vw;
-    height: 40px;
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    justify-items: center;
-    
-}
-
-/* nav {
-    border-style: outset;
-    border-radius: 30px 2px 30px 2px;
-    border-color: var(--Fucsia);
-    max-width: none;
-    max-height: 100px;
-    min-width: 200px;
-    min-height: 20px;
-    text-align: center;
-    padding-right: 35px;
-
-} */
-
-.nav-bg a {
-    font-size: 1rem;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding:8%;
-   /*  margin-left: 35%;
-    margin-right: 35%; */
-   /*  transition: transform 0.2s, background-color 0.3s; */
-}
-
-.nav-bg a:hover {
-    transform: scale(1.20);
-    transition: transform 0.2s, background-color 0.3s;
-    background: #d4138d;
-    background-image: linear-gradient(90deg, #c9ba30 0%,  #a6355b 47%,#d4138d 88%);
-    background-image:linear-gradient#8A018C;
-    border: solid;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: var(--Rosa);
-
-}
-
-
-h1 {
-    font-size: 2.5rem;
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    margin-top: 10px;
-    margin-left: 60px;
-    margin-right: 0;
-    
-}
 
 h2 {
     font-size: 1.5rem;
@@ -167,6 +33,120 @@ p {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    background-color: var(--Negro);
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+/* <!--  -//----------PORTADA Y TÍTULO----------//-  --> */
+
+header {
+    display:flex;
+    background: url(./assets/images/Portada\ piano.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 25vw;
+}
+
+.logotipo {
+    position: fixed;
+    max-width: 40px;
+    border-radius: 45px;
+    border-color: var(--Fucsia);
+    border-style: solid;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2rem;
+    position:fixed;
+    z-index: 1;
+    margin-left: 50px;
+    text-shadow: 1px 1px 1px var(--Fucsia);
+}
+
+
+
+/* <!-- ----BARRA DE NAVEGACIÓN----- -->  */
+
+#nav {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.nav-bg {
+    background: #d4138d;
+    background-image: linear-gradient(90deg, #d4138d 0%, #a6355b 47%, #c9ba30 88%);
+    min-width: 100vw;
+    height: 30px;
+    display:grid;
+    
+   /*  align-items: center; */
+   /*  justify-content: space-around; */
+    
+    
+}
+/* nav {
+    border-style: outset;
+    border-radius: 30px 2px 30px 2px;
+    border-color: var(--Fucsia);
+    max-width: none;
+    max-height: 100px;
+    min-width: 200px;
+    min-height: 20px;
+    text-align: center;
+    padding-right: 35px;
+
+} */
+
+#nav li a {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 25px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding:8%; */
+   /*  margin-left: 35%;
+    margin-right: 35%; */
+/*     transition: transform 0.2s, background-color 0.3s;
+ */}
+
+#nav li a:hover {
+/*     transform: scale(2.30);
+ */ background: #d4138d;
+    background-image: linear-gradient(90deg, #c9ba30 0%,  #a6355b 47%,#d4138d 88%);
+    background-image:linear-gradient#8A018C;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: var(--Rosa);
+    box-shadow: 1px 1px 1px #8A018C;
+    padding: 5px;
+
+}
+
+
+/* .descripcion {
+    color: #32e0e1;
+    display: flex;
+    align-items: end;
+} */
+
 
 /* .conoceme {
     display: grid;
