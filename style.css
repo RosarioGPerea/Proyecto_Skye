@@ -26,16 +26,16 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 p {
-    font-size: 1rem;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 1.2rem;
+    /* padding-left: 10px;
+    padding-right: 10px; */
 }
 
 body {
-    overflow-x: hidden;
+    height: 100vw;
     margin: 0;
     background-color: var(--Negro);
 }
@@ -44,6 +44,7 @@ a {
 }
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 /* <!--  -//----------PORTADA Y TÍTULO----------//-  --> */
@@ -53,89 +54,67 @@ header {
     background: url(./assets/images/Portada\ piano.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 25vw;
+    background-position:bottom;
+    height: 27vw;
+    align-self: center;
 }
 
-.logotipo {
-    position: fixed;
-    max-width: 40px;
-    border-radius: 45px;
-    border-color: var(--Fucsia);
-    border-style: solid;
-    z-index: 1;
-}
 
-h1 {
-    font-size: 2rem;
-    position:fixed;
-    z-index: 1;
-    margin-left: 50px;
-    text-shadow: 1px 1px 1px var(--Fucsia);
-}
+
 
 
 
 /* <!-- ----BARRA DE NAVEGACIÓN----- -->  */
 
-#nav {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-}
-
-
-.nav-bg {
+header nav {
     background: #d4138d;
     background-image: linear-gradient(90deg, #d4138d 0%, #a6355b 47%, #c9ba30 88%);
-    min-width: 100vw;
-    height: 30px;
-    display:grid;
-    
-   /*  align-items: center; */
-   /*  justify-content: space-around; */
-    
-    
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    z-index: 1;
+        
 }
-/* nav {
-    border-style: outset;
-    border-radius: 30px 2px 30px 2px;
-    border-color: var(--Fucsia);
-    max-width: none;
-    max-height: 100px;
-    min-width: 200px;
-    min-height: 20px;
-    text-align: center;
-    padding-right: 35px;
 
-} */
-
-#nav li a {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-right: 25px;
-    /* display: flex;
+header > nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding:8%; */
-   /*  margin-left: 35%;
-    margin-right: 35%; */
-/*     transition: transform 0.2s, background-color 0.3s;
- */}
+    align-items: center; 
+    margin: 0 1% 0 1%;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-#nav li a:hover {
-/*     transform: scale(2.30);
- */ background: #d4138d;
+header > nav > ul img {
+    max-width: 40px;
+    border-radius: 45px;
+    border-color: var(--Noche);
+    border-style: solid;
+    margin-top: 2.5px;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 3px var(--Noche);
+    margin-left: 50px;
+    margin-top: -35px;
+}
+
+header > nav > ul > li > a {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+header > nav > ul > li > .hover:hover {
+    background: #d4138d;
     background-image: linear-gradient(90deg, #c9ba30 0%,  #a6355b 47%,#d4138d 88%);
-    background-image:linear-gradient#8A018C;
     border: solid;
     border-radius: 5px;
     border-width: 1px;
-    border-color: var(--Rosa);
-    box-shadow: 1px 1px 1px #8A018C;
+    border-color: var(--Noche);
+    box-shadow: 1px 1px 1px var(--Gris);
     padding: 5px;
 
 }
@@ -184,19 +163,35 @@ h1 {
     display: flex;
 }
 */
-section .conoceme .conoceme_titulo {
+/* main {
+    display: grid;
+    grid-rows: 100px 200px 200px 200px;
+
+    
+    
+} */
+main section .conoceme {
+    display: flex;
+    border: 2px solid var(--Amarillo);
+    margin: 0 15px 0 15px;
+    justify-content: center;
+    align-items: center;
+}
+/* section .izquierda {
+
     text-align: center;
     position: relative;
     align-self:flex-start;
     justify-self: center;
     padding-bottom: 1rem;
 }
-
-section .conoceme .conoceme_texto {
+ */
+section .izquierda {
     position: relative;
     justify-content: center;
     align-items:center;
     text-align: justify;
+    padding: 40px;
 }
 /* section .conoceme .conoceme_texto p {
     text-align: justify;
@@ -209,6 +204,7 @@ section .conoceme .conoceme_foto {
 
 
 .foto {
+    height: 100%;
     width: 40vw;
     border: solid;
     border-radius: 20px;
@@ -220,14 +216,13 @@ section .conoceme .conoceme_foto {
 section .conoceme .conoceme_boton {
     color: var(--Noche);
     font-family: Krub, "Trebuchet MS";
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 800; 
     background-color: var(--Fucsia);
     border: solid;
     border-radius: 50px;
     border-width: 1px;
     border-color: var(--Rosa);
-    margin-left: 40%;
 }
 section .conoceme .conoceme_boton:hover {
     transform: scale(1.10);
@@ -236,13 +231,13 @@ section .conoceme .conoceme_boton:hover {
 }
 
 /* SECCIÓN DE SEPARACIÓN */
-.separador {
-    display: grid;
+/* .separador {
     justify-content: center;
     align-items: center;
-    min-width: 100vw;
-    max-height: 40vw;
-}
+    width: 100%;
+    overflow: hidden;
+    
+} */
 
 /* PÁGINA DE MIS TEMAS */
 
