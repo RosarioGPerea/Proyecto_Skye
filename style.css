@@ -6,6 +6,7 @@
     --Noche: #110753;
     --Amarillo: #f7c669;
     --Gris: #2f2e2f;
+    --Oscuro: #1f1e1faf;
     --Fucsia: hsl(326, 93%, 34%);
     --Blanco: #ffffff;
     --design-width: 1200;
@@ -37,7 +38,9 @@ p {
 body {
     height: 100vw;
     margin: 0;
-    background-color: var(--Negro);
+     background: #d4138d;
+    background-image: linear-gradient(90deg, #d4138d 0%, #a6355b 47%, #c9ba30 88%);
+    /* background-color: var(--Negro); */
 }
 a {
     text-decoration: none;
@@ -47,7 +50,7 @@ ul {
     padding: 0;
 }
 
-/* <!--  -//----------PORTADA Y TÍTULO----------//-  --> */
+/* <!--  -//----------HEADER----------//-  --> */
 
 header {
     display:flex;
@@ -55,16 +58,9 @@ header {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position:bottom;
-    height: 27vw;
+    height: 28vw;
     align-self: center;
 }
-
-
-
-
-
-
-/* <!-- ----BARRA DE NAVEGACIÓN----- -->  */
 
 header nav {
     background: #d4138d;
@@ -119,92 +115,56 @@ header > nav > ul > li > .hover:hover {
 
 }
 
-
-/* .descripcion {
-    color: #32e0e1;
-    display: flex;
-    align-items: end;
-} */
-
-
-/* .conoceme {
-    display: grid;
-    justify-items:center;
-    align-items: center;
-    background-color: var(--Negro);
-    overflow: hidden;
-    border: solid;
-    border-color: var(--Pink);
-    border-radius: 45px;
-    border-width: 0.5rem;
-    margin: 1rem;
-    padding: 2rem;
-} */
-
-/* section {
-    display:inline-table;
-    position:relative;
-    max-width: 100vw;
-    max-height: 20vw;
-    overflow-x: hidden;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-} */
-
-/* #conoceme {
-    background-color: #d4138d6c;
-    position: relative;
+header .barra_secundaria {
+    background: #d4138d;
+    background-image: linear-gradient(90deg, #d4138d 0%, #a6355b 47%, #c9ba30 88%);
+    width: 100vw;
+    align-self: self-end;
+    height: 15px;
+       
 }
-.conoceme {
-    position: absolute;
-    align-items: center;
-    display: flex;
-}
-*/
-/* main {
-    display: grid;
-    grid-rows: 100px 200px 200px 200px;
 
-    
-    
-} */
-main section .conoceme {
-    display: flex;
-    border: 2px solid var(--Amarillo);
-    margin: 0 15px 0 15px;
-    justify-content: center;
-    align-items: center;
-}
-/* section .izquierda {
 
-    text-align: center;
-    position: relative;
-    align-self:flex-start;
+/* <!-- ----MAIN----- -->  */
+section {
+    margin: 15px 0;
+}
+
+
+main > section > .conoceme {
+    display: flex;
+    background-color: var(--Oscuro); 
+    border-radius: 20px 100% 100% 20px;
+    max-width: 85vw;
     justify-self: center;
-    padding-bottom: 1rem;
+    align-items: center;
+    box-sizing: content-box;
+
 }
- */
-section .izquierda {
+
+main .conoceme .texto {
     position: relative;
     justify-content: center;
     align-items:center;
     text-align: justify;
-    padding: 40px;
+    padding: 10px;
 }
-/* section .conoceme .conoceme_texto p {
-    text-align: justify;
-    position: relative;
+
+main .conoceme h2 {
+    text-shadow: 2px 2px 5px var(--Fucsia);
+    font-size: 2.5rem;
 }
-section .conoceme .conoceme_foto {
-   align-self: end; 
-}  */
 
+main .conoceme .texto .p_1 {
+    font-weight: bold;
+}
 
+main .conoceme .texto .p_3 {
+    justify-self: end;
+}
 
-.foto {
-    height: 100%;
+ main .conoceme .foto {
+    height: 90%;
     width: 40vw;
     border: solid;
     border-radius: 20px;
@@ -213,31 +173,39 @@ section .conoceme .conoceme_foto {
 
 }
 
-section .conoceme .conoceme_boton {
-    color: var(--Noche);
+main .conoceme .boton {
+    color: var(--Fucsia);
     font-family: Krub, "Trebuchet MS";
     font-size: 2rem;
-    font-weight: 800; 
-    background-color: var(--Fucsia);
+    font-weight: 800;
+    text-shadow: 1px 1px 1px var(--Rosa); 
+    background-color: var(--Noche);
     border: solid;
-    border-radius: 50px;
-    border-width: 1px;
-    border-color: var(--Rosa);
+    border-width: 3px;
+    border-image: linear-gradient(90deg, #d4138d 0%, #a6355b 47%, #c9ba30 88%)1;
 }
-section .conoceme .conoceme_boton:hover {
+section .conoceme .boton:hover {
     transform: scale(1.10);
     color: #f20779;
+    text-shadow: 1px 1px 1px var(--Fucsia);
     background-color: var(--Noche);
+    cursor: pointer;
 }
 
 /* SECCIÓN DE SEPARACIÓN */
-/* .separador {
+
+section .separador {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    overflow: hidden;
+    max-height: 20vw;
+    overflow:hidden;
+    opacity: 70%;
     
-} */
+}
+
+
 
 /* PÁGINA DE MIS TEMAS */
 
