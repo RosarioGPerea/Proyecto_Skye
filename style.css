@@ -30,8 +30,7 @@ h3 {
 }
 p {
   font-size: 1.2rem;
-  /* padding-left: 10px;
-    padding-right: 10px; */
+ 
 }
 
 body {
@@ -58,10 +57,10 @@ ul {
 
 header {
   display: flex;
-  background: url(./assets/images/Portada\ piano.png);
+  background: url(./assets/images/2.PNG);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   height: 28vw;
   align-self: center;
 }
@@ -169,12 +168,13 @@ main .conoceme h2 {
   font-size: 2.5rem;
 }
 
-main .conoceme .texto .p_1 {
+/* main .conoceme .texto .p_1 {
   font-weight: bold;
-}
+} */
 
 main .conoceme .texto .p_3 {
   justify-self: end;
+  font-weight: bold;
 }
 
 main .conoceme .foto {
@@ -212,9 +212,9 @@ section > img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-height: 20vw;
+  max-height: 40vw;
   overflow: hidden;
-  opacity: 70%;
+  opacity: 50%;
   object-fit: cover;
 }
 
@@ -233,7 +233,7 @@ section > .wrap {
 section > .wrap > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr;
   gap: 10px;
   margin: 10px;
 }
@@ -242,59 +242,206 @@ section > .wrap img {
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
-  
 }
 
-section > .wrap p:nth-child(1) {
+section > .wrap h2:nth-child(1) {
   grid-column: 1/5;
+  grid-row: 1/2;
   justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 5px var(--Fucsia);
+  font-size: 2.5rem;
+}
 
+section > .wrap h2:nth-child(1):hover {
+  transform: scale(1.1);
+  color: #f20779;
+  text-shadow: 1px 1px 1px var(--Fucsia);
+  /* background-color: var(--Noche);
+  background-size: contain; */
+  cursor: pointer;
 }
 
 section > .wrap img:nth-child(2) {
   grid-column: 1/3;
   grid-row: 2/4;
-  
-    content: "texto";
-  color: var(--Blanco);
   cursor: pointer;
 }
 
 section > .wrap img:nth-child(3) {
   grid-column: 3/4;
   grid-row: 2/3;
-  
-    content: "texto";
-  color: var(--Blanco);
   cursor: pointer;
 }
 
 section > .wrap img:nth-child(4) {
   grid-column: 4/5;
   grid-row: 2/3;
-  
-  
-    content: "texto";
-  color: var(--Blanco);
   cursor: pointer;
 }
 
 section > .wrap img:nth-child(5) {
   grid-column: 3/4;
   grid-row: 3/4;
-  
-    content: "texto";
-  color: var(--Blanco);
   cursor: pointer;
 }
 
 section > .wrap img:nth-child(6) {
   grid-column: 4/5;
   grid-row: 3/4;
-  
-    content: "texto";
-  color: var(--Blanco);
   cursor: pointer;
+}
+
+/* <!-- ----SECCIÓN CONTACTO----- -->  */
+
+section #contacto {
+  background-color: var(--Oscuro);
+  border-radius: 20px 20px 20px 20px;
+  width: 85vw;
+  justify-self: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+section #contacto form {
+  
+  /*  gap:10%; */
+}
+
+section #contacto fieldset {
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  align-items: center;
+}
+
+fieldset img {
+  grid-column: 1/2;
+  grid-row: 4/9;
+  height:20vw;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+  justify-self: center;
+}
+
+fieldset > legend {
+  grid-column: 2/2;
+  grid-row: 2/2;
+  text-align: center;
+  text-shadow: 2px 2px 5px var(--Fucsia);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+fieldset .nombre {
+  grid-column: 2/2;
+  grid-row: 4/4;
+}
+
+fieldset .telefono {
+  grid-column: 2/2;
+  grid-row: 5/5;
+}
+
+fieldset .e-mail {
+  grid-column: 2/2;
+  grid-row: 6/6;
+}
+
+fieldset .mensaje {
+  grid-column: 2/2;
+  grid-row: 7/7;
+}
+
+fieldset .submit {
+  grid-column: 2/2;
+  grid-row: 8/8;
+}
+
+main #contacto label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+form .text_box {
+  width: 90%;
+  border: 2px solid var(--Fucsia);
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px var(--Rosa);
+  padding: 1%;
+  margin: 2%;
+}
+
+/* <!-- ----FOOTER----- -->  */
+
+footer {
+  
+  background-image: url(./assets/images/gerold-hinzen-AhRygnKYHv8-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20vw;
+  align-self: center;
+}
+
+footer > .wrap {
+  position: relative;
+  display: flex;
+  background-color: #d4138d28;
+  height: 100%;
+  width: 100%;
+}
+
+/* footer .wrap div {
+margin-top: 5%;
+} */
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer > .wrap > div {
+  display: flex;
+  flex-direction: row;
+  justify-content:right;
+  align-items: center;
+  margin-left:5%;
+}
+footer li > a {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+footer li > a:hover {
+  color: #f20779;
+  text-shadow: 1px 1px 1px var(--Fucsia);
+  cursor: pointer;
+}
+
+footer li img {
+  margin: 3px 10px;
+  width: 20px;
+}
+
+footer .derechos > p {
+  font-weight: 600;
+  justify-self: center;
+  
+}
+
+footer .derechos > p a {
+  font-weight: 700;
+  font-size: large;
+  text-shadow: 2px 2px 5px var(--Fucsia);
+}
+
+footer .derechos > p img {
+  height: 25px;
+  filter: drop-shadow(2px 2px 1px black);
 }
 
 
