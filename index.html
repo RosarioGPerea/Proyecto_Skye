@@ -50,17 +50,11 @@
       </ul>
 
     </nav>
-    <div class="barra_secundaria">
 
-    </div>
   </header>
-  <!--  -- // ----------SUBTÍTULO Y DESCRIPPCIÓN---------- // --  -->
+  
   <main>
-    <!--  <section class="descripcion">
-      <h2>Compositora</h2>
-      <h3>Bandas sonoras de videojuegos, artcore y mucho más</h3>
-      <section /> -->
-
+  
     <!--  -- // ----------SECCIÓN 1 (CONÓCEME)---------- // --  -->
 
     <section id="conoceme">
@@ -73,7 +67,7 @@
               <h2>Conóceme</h2>
             </li>
             <li>
-              <p class="p_1">
+              <p>
                 Compositora y pianista apasionada por la experimentación sonora. Desde el minimalismo al black metal,
                 pasando por Vocaloid, crítica social, videoarte y bandas sonoras.
               </p>
@@ -82,8 +76,9 @@
               </p>
             </li>
             <li>
-              <button class="boton" href="./conoceme.html">Saber Más</button>
+              <a class="boton" href="./conoceme.html">Saber Más</a>
             </li>
+          </ul>
         </div>
         <!--         <div class="conoceme conoceme_foto"></div>
  -->
@@ -124,48 +119,49 @@
     <!--  -- // ----------SECCIÓN 3 (CONTACTO)---------- // --  -->
 
     <section>
-      <div id="contacto">
+      <form>
 
-        <form>
-
-          <fieldset class="wrap">
-            <legend>¡Contáctame!</legend>
-            <!-- <div class="img_contact"> -->
-            <img src="./assets/images/techivation-avhSF7skf7s-unsplash.jpg"
-              alt="Imágen de la mano de Skye componiendo en su libreta de música">
-
-            <!--  </div> -->
-            <div class="nombre">
-              <label for="Nombre">Nombre</label>
-              <input class="text_box" type="text" placeholder="Escibe tu Nombre">
+        <fieldset>
+          <h2>¡Contáctame!</h2>
+          <div id="contacto">
+            <div class="contact-box">
+            
+              <img src="./assets/images/contacto.JPG"
+                alt="Imágen de la mano de Skye componiendo en su libreta de música">
             </div>
+           
+            <div class="textWrap">
 
-            <div class="telefono">
-              <label for="Teléfono">Teléfono</label>
-              <input class="text_box" type="tel" placeholder="Escibe tu Teléfono">
+              <div class="nombre">
+                <label for="Nombre">Nombre</label>
+                <input class="text_box" type="text" placeholder="Escibe tu Nombre">
+              </div>
+
+              <div class="telefono">
+                <label for="Teléfono">Teléfono</label>
+                <input class="text_box" type="tel" placeholder="Escibe tu Teléfono">
+              </div>
+
+              <div class="e-mail">
+                <label for="E-mail">E-mail</label>
+                <input class="text_box" type="email" placeholder="Escribe tu E-mail">
+              </div>
+
+              <div class="mensaje">
+                <label for="Mensaje">Mensaje</label>
+                <textarea class="text_box" placeholder="Escíbeme tus dudas"></textarea>
+              </div>
+
+
             </div>
-
-            <div class="e-mail">
-              <label for="E-mail">E-mail</label>
-              <input class="text_box" type="email" placeholder="Escribe tu E-mail">
-            </div>
-
-            <div class="mensaje">
-              <label for="Mensaje">Mensaje</label>
-              <textarea class="text_box" placeholder="Escíbeme tus dudas"></textarea>
-            </div>
-
             <div class="submit">
               <input type="submit" value="Enviar">
             </div>
+          </div>
+        </fieldset>
+      </form>
 
-          </fieldset>
-        </form>
-      </div>
     </section>
-    <!-- <section>
-      <img class="separador" src="assets/images/Skye Piano 2.PNG" alt="Imagen sintetizador" />
-    </section> -->
   </main>
 
 
@@ -204,7 +200,7 @@
         </ul>
       </div>
       <div>
-        <ul>
+        <ul class="url">
           <li>
             <a class="hover" href="./index.html">Inicio</a>
           </li>
@@ -221,12 +217,12 @@
 
         </ul>
       </div>
-    </div>
-    <div class="derechos">
-      <p>Página creada por <a href="#"><Img src="./assets/images/Drawing svgz.webp" alt="Logotipo Rocío Free" /> Rocío
-          Free</a>. Todos los derechos reservados.</p>
-    </div>
 
+      <div class="derechos">
+        <p>Página creada por <a href="#"><Img src="./assets/images/Drawing svgz.webp" alt="Logotipo Rocío Free" /> Rocío
+            Free</a>. Todos los derechos reservados.</p>
+      </div>
+    </div>
   </footer>
 </body>
 

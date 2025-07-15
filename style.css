@@ -1,15 +1,15 @@
 :root {
   --Celeste: #32e0e1;
-  --Negro: hsl(0, 2%, 10%);
+  --Negro: #1a1919;
   --Azulado: #3fa4c2;
-  --Rosa: #f55c8f;
+  --Rosa: #d4138d;
   --Noche: #110753;
-  --Amarillo: #f7c669;
+  --Amarillo: #c9ba30;
   --Gris: #2f2e2f;
   --Oscuro: #1f1e1faf;
-  --Fucsia: hsl(326, 93%, 34%);
+  --Fucsia: #a6355b;
   --Blanco: #ffffff;
-  --design-width: 1200;
+  --Degradado: #d4138d28;
 }
 
 * {
@@ -30,18 +30,18 @@ h3 {
 }
 p {
   font-size: 1.2rem;
- 
 }
 
 body {
   height: 100vw;
+  width: auto;
   margin: 0;
-  background: #d4138d;
+  background: var(--Rosa);
   background-image: linear-gradient(
     90deg,
-    #d4138d 0%,
-    #a6355b 47%,
-    #c9ba30 88%
+    var(--Rosa) 0%,
+    var(--Fucsia) 47%,
+    var(--Amarillo) 88%
   );
   /* background-color: var(--Negro); */
 }
@@ -66,12 +66,12 @@ header {
 }
 
 header nav {
-  background: #d4138d;
+  background: var(--Rosa);
   background-image: linear-gradient(
     90deg,
-    #d4138d 0%,
-    #a6355b 47%,
-    #c9ba30 88%
+    var(--Rosa) 0%,
+    var(--Fucsia) 47%,
+    var(--Amarillo) 88%
   );
   width: 100%;
   height: 45px;
@@ -111,12 +111,12 @@ header > nav > ul > li > a {
 }
 
 header > nav > ul > li > .hover:hover {
-  background: #d4138d;
+  background: var(--Rosa);
   background-image: linear-gradient(
     90deg,
-    #c9ba30 0%,
-    #a6355b 47%,
-    #d4138d 88%
+    var(--Amarillo) 0%,
+    var(--Fucsia) 47%,
+    var(--Rosa) 88%
   );
   border: solid;
   border-radius: 5px;
@@ -126,29 +126,17 @@ header > nav > ul > li > .hover:hover {
   padding: 5px;
 }
 
-header .barra_secundaria {
-  background: #d4138d;
-  background-image: linear-gradient(
-    90deg,
-    #d4138d 0%,
-    #a6355b 47%,
-    #c9ba30 88%
-  );
-  width: 100vw;
-  align-self: self-end;
-  height: 15px;
-}
 
 /* <!-- ----MAIN----- -->  */
 
 main section {
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 main > section > .conoceme {
   display: flex;
   background-color: var(--Oscuro);
-  border-radius: 20px 100% 100% 20px;
+  border-radius: 20px;
   max-width: 85vw;
   justify-self: center;
   align-items: center;
@@ -160,17 +148,17 @@ main .conoceme .texto {
   justify-content: center;
   align-items: center;
   text-align: justify;
-  padding: 10px;
+  padding: 20px;
 }
 
 main .conoceme h2 {
   text-shadow: 2px 2px 5px var(--Fucsia);
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
-/* main .conoceme .texto .p_1 {
-  font-weight: bold;
-} */
+main .conoceme .texto ul {
+  padding: 10px;
+}
 
 main .conoceme .texto .p_3 {
   justify-self: end;
@@ -182,27 +170,45 @@ main .conoceme .foto {
   width: 40vw;
   border: solid;
   border-radius: 20px;
-  border-color: #ec008c;
-  box-shadow: 2px 2px 4px #ad0f73;
+  border-color: var(--Rosa);
+  box-shadow: 2px 2px 4px var(--Fucsia);
 }
 
 main .conoceme .boton {
   color: var(--Fucsia);
   font-family: Krub, "Trebuchet MS";
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 700;
+  padding: 5px;
   text-shadow: 1px 1px 1px var(--Rosa);
   background-color: var(--Noche);
   border: solid;
   border-width: 3px;
-  border-image: linear-gradient(90deg, #d4138d 0%, #a6355b 47%, #c9ba30 88%) 1;
+  border-image: linear-gradient(
+      90deg,
+      var(--Rosa) 0%,
+      var(--Fucsia) 47%,
+      var(--Amarillo) 88%
+    )
+    1;
 }
 section .conoceme .boton:hover {
   transform: scale(1.1);
-  color: #f20779;
+  color: var(--Rosa);
   text-shadow: 1px 1px 1px var(--Fucsia);
   background-color: var(--Noche);
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .conoceme {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #conoceme .foto {
+    width: 75vw;
+    margin-bottom: 20px;
+  }
 }
 
 /* <!-- ----SECCIÓN DE SEPARACIÓN----- -->  */
@@ -294,143 +300,143 @@ section > .wrap img:nth-child(6) {
 
 /* <!-- ----SECCIÓN CONTACTO----- -->  */
 
+fieldset > h2 {
+  text-shadow: 2px 2px 5px var(--Oscuro);
+  font-size: 2.5rem;
+}
 section #contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: var(--Oscuro);
   border-radius: 20px 20px 20px 20px;
   width: 85vw;
+  height: 60vw;
   justify-self: center;
-  align-items: center;
+  padding: 40px;
+  gap: 40px;
   box-sizing: border-box;
 }
 
-section #contacto form {
-  
-  /*  gap:10%; */
-}
-
-section #contacto fieldset {
+section fieldset {
   border: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  align-items: center;
 }
 
-fieldset img {
-  grid-column: 1/2;
-  grid-row: 4/9;
-  height:20vw;
-  border-radius: 20px;
-  margin: 0;
-  padding: 0;
-  justify-self: center;
+#contacto img {
+  width: 30vw;
+  height: auto;
+  border: none;
+  border-radius: 12px;
 }
 
-fieldset > legend {
-  grid-column: 2/2;
-  grid-row: 2/2;
-  text-align: center;
-  text-shadow: 2px 2px 5px var(--Fucsia);
-  font-size: 2.5rem;
-  font-weight: 700;
+.submit > input {
+  color: var(--Fucsia);
+  font-family: Krub, "Trebuchet MS";
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 5px;
+  text-shadow: 1px 1px 1px var(--Rosa);
+  background-color: var(--Noche);
+  border: 3px solid;
+  border-image: linear-gradient(90deg, #d4138d 0%, #a6355b 47%, #c9ba30 88%) 1;
 }
-
-fieldset .nombre {
-  grid-column: 2/2;
-  grid-row: 4/4;
-}
-
-fieldset .telefono {
-  grid-column: 2/2;
-  grid-row: 5/5;
-}
-
-fieldset .e-mail {
-  grid-column: 2/2;
-  grid-row: 6/6;
-}
-
-fieldset .mensaje {
-  grid-column: 2/2;
-  grid-row: 7/7;
-}
-
-fieldset .submit {
-  grid-column: 2/2;
-  grid-row: 8/8;
+.submit > input:hover {
+  transform: scale(1.1);
+  color: var(--Rosa);
+  text-shadow: 1px 1px 1px var(--Fucsia);
+  background-color: var(--Noche);
+  cursor: pointer;
 }
 
 main #contacto label {
   font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
 }
 
 form .text_box {
-  width: 90%;
+  width: 100%;
+  height: auto;
   border: 2px solid var(--Fucsia);
   border-radius: 5px;
   box-shadow: 2px 2px 3px var(--Rosa);
-  padding: 1%;
-  margin: 2%;
+  padding: 5%;
+  margin: 3%;
+  color: var(--Noche);
+  font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  #contacto .textWrap {
+    width: 100%;
+    height:auto;
+  }
+  #contacto img {
+    display: none;
+  }
+}
+
 
 /* <!-- ----FOOTER----- -->  */
 
 footer {
-  
   background-image: url(./assets/images/gerold-hinzen-AhRygnKYHv8-unsplash.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 20vw;
-  align-self: center;
+  height: 35vh;
+
+  margin: 0;
+  padding: 0;
 }
 
 footer > .wrap {
-  position: relative;
   display: flex;
-  background-color: #d4138d28;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--Degradado);
   height: 100%;
   width: 100%;
+  padding: 0 20px;
 }
-
-/* footer .wrap div {
-margin-top: 5%;
-} */
 
 footer ul {
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-footer > .wrap > div {
+
+footer > .wrap .redes {
   display: flex;
   flex-direction: row;
-  justify-content:right;
-  align-items: center;
-  margin-left:5%;
+  justify-content: right;
+  align-items: start;
+  margin-left: 20px;
 }
+
 footer li > a {
   font-weight: 500;
   font-size: 1.5rem;
 }
+
 footer li > a:hover {
-  color: #f20779;
+  color: var(--Rosa);
   text-shadow: 1px 1px 1px var(--Fucsia);
   cursor: pointer;
 }
 
-footer li img {
-  margin: 3px 10px;
-  width: 20px;
+footer .url {
+  display: flex;
+  flex-direction: column;
+  top: 90px;
 }
 
-footer .derechos > p {
+footer li img {
+  margin: 10px;
+  width: 20px;
+  filter: drop-shadow(1px 1px 0px var(--Blanco));
+}
+
+footer .derechos {
   font-weight: 600;
-  justify-self: center;
-  
+  display: flex;
+  top: 90px;
 }
 
 footer .derechos > p a {
@@ -441,18 +447,17 @@ footer .derechos > p a {
 
 footer .derechos > p img {
   height: 25px;
-  filter: drop-shadow(2px 2px 1px black);
+  filter: drop-shadow(0.5px 0.5px 0px var(--Blanco));
 }
 
-
-
-/* PÁGINA DE MIS TEMAS */
+/* <!-- ----PÁGINA COMPOSICIONES----- -->  */
 
 .h2_MT {
   text-align: center;
 }
 
-/* ESTILOS SINTETIZADOR */
+/* <!-- ----SINTETIZADOR----- -->  */
+
 
 #main-synth-wrapper {
   background: #1a1a1a;
