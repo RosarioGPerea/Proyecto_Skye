@@ -45,7 +45,7 @@
         </li>
 
         <li>
-          <a class="hover" href="./contacto.html">Contacto</a>
+          <a class="hover" href="./index.html#contacto">Contacto</a>
         </li>
       </ul>
 
@@ -53,136 +53,127 @@
 
   </header>
   <main>
+
+    <!--  -- // ----------SINTETIZADOR-REPRODUCTOR---------- // --  -->
+
     <section id="Sintetizador">
 
-        <h2 class="h2_MT">Mis Temas</h2>
+      <h2 class="h2_MT">Mis Temas</h2>
 
-        <div id="main-synth-wrapper">
-
-            
-                <div id="ruedas">
-                    <div class="rueda_iz"></div>
-                    <div class="rueda_iz"></div>
-                    <div class="rueda_iz"></div>
-                    <div class="rueda_iz"></div>
-                    <div class="rueda_iz"></div>
-                </div>
-
-           <!--  <div id="contenedor_sintetizador"> -->
-                <div id="padContainer">
-                    <div class="pad" data-track-name="Crystal" onclick="playTrack('Crystal', this)">
-                        <img src="./covers/1.png" alt="Crystal Monster" />
-                        <span>Crystal Monster</span>
-                    </div>
-
-                    <div class="pad" data-track-name="Ghostly" onclick="playTrack('Ghostly', this)">
-                        <img src="covers/PORTADA GHOSTLY ASHES.png" alt="Ghostly Ashes" />
-                        <span>Ghostly Ashes</span>
-                    </div>
-
-                    <div class="pad" data-track-name="Gravity" onclick="playTrack('Gravity', this)">
-                        <img src="covers/PORTADA GRAVITY ZERO.png" alt="Gravity Zero" />
-                        <span>Gravity Zero</span>
-                    </div>
-
-                    <div class="pad" data-track-name="Infinito" onclick="playTrack('Infinito', this)">
-                        <img src="covers/PORTADA INFINITO ETERNO.png" alt="Infinito Eterno" />
-                        <span>Infinito Eterno</span>
-                    </div>
-
-                    <div class="pad" data-track-name="Loneliness" onclick="playTrack('Loneliness', this)">
-                        <img src="covers/PORTADA LONELINESS.png" alt="Loneliness" />
-                        <span>Loneliness</span>
-                    </div>
+      <div id="main-synth-wrapper">
 
 
+        <div id="ruedas">
+          <div class="rueda_iz"></div>
+          <div class="rueda_iz"></div>
+          <div class="rueda_iz"></div>
+          <div class="rueda_iz"></div>
+          <div class="rueda_iz"></div>
+        </div>
 
-                <!-- </div> -->
+        
+        <div id="padContainer">
+          <div class="pad" data-track-name="Crystal" onclick="playTrack('Crystal', this)">
+            <img src="./covers/1.png" alt="Crystal Monster" />
+            <span>Crystal Monster</span>
+          </div>
 
-            </div>
+          <div class="pad" data-track-name="Ghostly" onclick="playTrack('Ghostly', this)">
+            <img src="covers/PORTADA GHOSTLY ASHES.png" alt="Ghostly Ashes" />
+            <span>Ghostly Ashes</span>
+          </div>
 
-            <div id="keyboard">
+          <div class="pad" data-track-name="Gravity" onclick="playTrack('Gravity', this)">
+            <img src="covers/PORTADA GRAVITY ZERO.png" alt="Gravity Zero" />
+            <span>Gravity Zero</span>
+          </div>
 
-                <div class="white-keys-container">
+          <div class="pad" data-track-name="Infinito" onclick="playTrack('Infinito', this)">
+            <img src="covers/PORTADA INFINITO ETERNO.png" alt="Infinito Eterno" />
+            <span>Infinito Eterno</span>
+          </div>
 
-                    <div class="key white" data-note="C" onclick="playNote(this, 'C')"></div>
-
-                    <div class="key white" data-note="D" onclick="playNote(this, 'D')"></div>
-
-                    <div class="key white" data-note="E" onclick="playNote(this, 'E')">
-                    </div>
-
-                    <div class="key white" data-note="F" onclick="playNote(this, 'F')">
-                    </div>
-
-                    <div class="key white" data-note="G" onclick="playNote(this, 'G')">
-                    </div>
-
-                    <div class="key white" data-note="A" onclick="playNote(this, 'A')">
-                    </div>
-
-                    <div class="key white" data-note="B" onclick="playNote(this, 'B')">
-                    </div>
-                    <div class="key white" data-note="G" onclick="playNote(this, 'G')">
-                    </div>
-
-                    <div class="key white" data-note="A" onclick="playNote(this, 'A')">
-                    </div>
-
-                    <div class="key white" data-note="B" onclick="playNote(this, 'B')">
-                    </div>
-
-                </div>
-                <div class="black-keys-container">
-
-                    <div class="key black" data-note="Cb1" onclick="playNote(this,'Cb1')">
-                    </div>
-
-                    <div class="key black" data-note="Db1" onclick="playNote(this,'Db1')">
-                    </div>
-
-                    <div class="none" data-note="Fb1" onclick="playNote(this,'Fb1')">
-                    </div>
-
-                    <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
-                    </div>
-
-                    <div class="key black" data-note="Ab1" onclick="playNote(this,'Ab1')">
-                    </div>
-                    <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
-                    </div>
-
-                    <div class="none" data-note="Ab1" onclick="playNote(this,'Ab1')">
-                    </div>
-                    <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
-                    </div>
-
-                    <div class="key black" data-note="Ab1" onclick="playNote(this,'Ab1')">
-                    </div>
-
-                </div>
-
-            </div>
-
-
+          <div class="pad" data-track-name="Loneliness" onclick="playTrack('Loneliness', this)">
+            <img src="covers/PORTADA LONELINESS.png" alt="Loneliness" />
+            <span>Loneliness</span>
+          </div>
 
         </div>
-        <script src="script.js"></script>
+
+        <div id="keyboard">
+
+          <div class="white-keys-container">
+
+            <div class="key white" data-note="C" onclick="playNote(this, 'C')"></div>
+
+            <div class="key white" data-note="D" onclick="playNote(this, 'D')"></div>
+
+            <div class="key white" data-note="E" onclick="playNote(this, 'E')">
+            </div>
+
+            <div class="key white" data-note="F" onclick="playNote(this, 'F')">
+            </div>
+
+            <div class="key white" data-note="G" onclick="playNote(this, 'G')">
+            </div>
+
+            <div class="key white" data-note="A" onclick="playNote(this, 'A')">
+            </div>
+
+            <div class="key white" data-note="B" onclick="playNote(this, 'B')">
+            </div>
+            <div class="key white" data-note="G" onclick="playNote(this, 'G')">
+            </div>
+
+            <div class="key white" data-note="A" onclick="playNote(this, 'A')">
+            </div>
+
+            <div class="key white" data-note="B" onclick="playNote(this, 'B')">
+            </div>
+
+          </div>
+          <div class="black-keys-container">
+
+            <div class="key black" data-note="Cb1" onclick="playNote(this,'Cb1')">
+            </div>
+
+            <div class="key black" data-note="Db1" onclick="playNote(this,'Db1')">
+            </div>
+
+            <div class="none" data-note="Fb1" onclick="playNote(this,'Fb1')">
+            </div>
+
+            <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
+            </div>
+
+            <div class="key black" data-note="Ab1" onclick="playNote(this,'Ab1')">
+            </div>
+            <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
+            </div>
+
+            <div class="none" data-note="Ab1" onclick="playNote(this,'Ab1')">
+            </div>
+            <div class="key black" data-note="Gb1" onclick="playNote(this,'Gb1')">
+            </div>
+
+            <div class="key black" data-note="Ab1" onclick="playNote(this,'Ab1')">
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <script src="script.js"></script>
     </section>
-    <section>
-        <h2 class="h2_MT">Descripción</h2>
-        <p>
-            psum dolor sit amet consectetur adipisicing elit. Atque dolorem at
-            dolores fugit aperiam aut accusamus nobis quaerat. Sequi, rerum
-            veritatis delectus modi optio vero ea? Et hic similique deserunt!
-            Minus, eligendi. Eligendi quod aspernatur voluptate nihil doloremque
-            perspiciatis beatae odio quis. Qui debitis quibusdam rerum
-            exercitationem nulla inventore labo
-        </p>
-    </section>
+
   </main>
 
-<footer>
+  <!--  -- // ----------PIÉ DE PÁGINA---------- // --  -->
+
+  <footer>
     <div class="wrap">
       <div>
         <ul class="redes">

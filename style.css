@@ -3,7 +3,7 @@
   --Negro: #1a1919;
   --Azulado: #3fa4c2;
   --Rosa: #d4138d;
-  --Noche: #110753;
+  --Noche: #120663;
   --Amarillo: #c9ba30;
   --Gris: #2f2e2f;
   --Oscuro: #1f1e1faf;
@@ -449,6 +449,94 @@ footer .derechos > p a {
 footer .derechos > p img {
   height: 25px;
   filter: drop-shadow(0.5px 0.5px 0px var(--Blanco));
+}
+
+
+
+
+
+
+
+
+
+/* <!-- ----PÁGINA CONÓCEME----- -->  */
+
+
+
+
+main .contenedor {
+  max-width: 85vw;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: var(--Oscuro);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+main h2 {
+  text-shadow: 2px 2px 5px var(--Rosa);
+  font-size: 2rem;
+}
+
+
+main .historia p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+main .historia strong {
+  color: var(--Rosa);
+  font-size: larger;
+}
+
+main .historia em {
+  font-style: italic;
+  color: var(--Rosa);
+  font-size: larger;
+}
+
+main .historia .final {
+  font-weight: bold;
+  margin-top: 30px;
+  color: var(--Rosa);
+  font-size:1.6rem;
+  text-shadow: 0.5px 0.5px 1px var(--Negro);
+}
+
+/* Estilos para imágenes */
+.imagenDerecha, .imagenIzquierda {
+  width: 40%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 10px 20px 20px;
+}
+
+.imagenDerecha {
+  float: left;
+}
+
+.imagenIzquierda {
+  float: right;
+}
+
+/* Limpieza de floats */
+.historia::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  .imagenDerecha, .imagenIzquierda {
+    float: none;
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+  }
 }
 
 /* <!-- ----PÁGINA COMPOSICIONES----- -->  */
